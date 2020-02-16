@@ -8,7 +8,7 @@ const FormItem = () => {
         password: ""
     });
 
-    const _handleChange = (evt) => {
+    const _handleChsange = (evt) => {
      const value = evt.target.value;
      setState({
          ...state,

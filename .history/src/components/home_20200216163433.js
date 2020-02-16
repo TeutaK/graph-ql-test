@@ -1,8 +1,16 @@
 import React, {useEffect, useReducer} from 'react';
 import TodoList from "./TodoList";
 import "./TodoListStyle.css";
-import Dogs from './Dogs';
+import gql from 'graphql-tag';
 
+const GET_DOGS = gql`
+ query {
+     dogs {
+         id
+         breed
+     }
+ }
+`;
 
 const Home =()=> {
 
@@ -14,8 +22,6 @@ const Home =()=> {
     return(
         <div>
             Home
-            <h1>Dogs</h1>
-            <Dogs />
             <h1>
                 Filter Employees
             </h1>
