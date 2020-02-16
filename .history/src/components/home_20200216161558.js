@@ -1,7 +1,6 @@
 import React, {useEffect, useReducer} from 'react';
 import TodoList from "./TodoList";
 import "./TodoListStyle.css";
-import Dogs from './Dogs';
 
 
 const Home =()=> {
@@ -14,8 +13,6 @@ const Home =()=> {
     return(
         <div>
             Home
-            <h1>Dogs</h1>
-            <Dogs />
             <h1>
                 Filter Employees
             </h1>

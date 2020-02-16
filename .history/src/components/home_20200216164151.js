@@ -1,7 +1,6 @@
 import React, {useEffect, useReducer} from 'react';
 import TodoList from "./TodoList";
 import "./TodoListStyle.css";
-import Dogs from './Dogs';
 
 
 const Home =()=> {
